@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Message_Panel">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl12" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl12</Property>
+      <Property Name="Size">216, 22</Property>
+      <Property Name="Location">186, 126</Property>
+      <Property Name="Font">Arial, 14.25pt</Property>
+      <Property Name="Text">RDS_Coder_Data_CAN</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl9" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl9</Property>
+      <Property Name="Size">214, 22</Property>
+      <Property Name="Location">186, 82</Property>
+      <Property Name="Font">Arial, 14.25pt</Property>
+      <Property Name="Text">Ball_Game_Mode_CAN</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl8" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl8</Property>
+      <Property Name="Size">197, 22</Property>
+      <Property Name="Location">186, 50</Property>
+      <Property Name="Font">Arial, 14.25pt</Property>
+      <Property Name="Text">ABS_Msg_Data_CAN</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl7</Property>
+      <Property Name="Size">66, 22</Property>
+      <Property Name="Location">89, 86</Property>
+      <Property Name="Font">Arial, 14.25pt</Property>
+      <Property Name="Text">0x4D7</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl4</Property>
+      <Property Name="Size">73, 22</Property>
+      <Property Name="Location">89, 127</Property>
+      <Property Name="Font">Arial, 14.25pt</Property>
+      <Property Name="Text">0X4DD</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl3</Property>
+      <Property Name="Size">63, 22</Property>
+      <Property Name="Location">89, 52</Property>
+      <Property Name="Font">Arial, 14.25pt</Property>
+      <Property Name="Text">0x413</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">183, 29</Property>
+      <Property Name="Location">186, 16</Property>
+      <Property Name="Font">Arial, 18pt, style=Bold</Property>
+      <Property Name="Text">message name</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">37, 29</Property>
+      <Property Name="Location">104, 16</Property>
+      <Property Name="Font">Arial, 18pt, style=Bold</Property>
+      <Property Name="Text">ID</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl8" Children="Controls" ControlName="Panel Control Button">
+      <Property Name="Name">PanelButtonControl8</Property>
+      <Property Name="Size">30, 23</Property>
+      <Property Name="Location">35, 126</Property>
+      <Property Name="PanelList">1;1;GSW_RDS_Coder_Data_CAN.xvp</Property>
+      <Property Name="NodeList">1;0</Property>
+      <Property Name="NetworkList">1;0</Property>
+      <Property Name="Text">
+      </Property>
+      <Property Name="TabIndex">7</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl5" Children="Controls" ControlName="Panel Control Button">
+      <Property Name="Name">PanelButtonControl5</Property>
+      <Property Name="Size">30, 23</Property>
+      <Property Name="Location">35, 85</Property>
+      <Property Name="PanelList">1;1;GSW_Ball_Game_Mode_CAN.xvp</Property>
+      <Property Name="NodeList">1;0</Property>
+      <Property Name="NetworkList">1;0</Property>
+      <Property Name="Text">
+      </Property>
+      <Property Name="TabIndex">4</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.63.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl1" Children="Controls" ControlName="Panel Control Button">
+      <Property Name="Name">PanelButtonControl1</Property>
+      <Property Name="Size">30, 23</Property>
+      <Property Name="Location">35, 52</Property>
+      <Property Name="PanelList">1;1;GSW_ABS_Msg_Data_CAN.xvp</Property>
+      <Property Name="NodeList">1;0</Property>
+      <Property Name="NetworkList">1;0</Property>
+      <Property Name="Text">
+      </Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">464, 201</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>
