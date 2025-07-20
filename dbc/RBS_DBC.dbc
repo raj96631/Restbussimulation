@@ -1,0 +1,97 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IPC GWM BCM
+VAL_TABLE_ Indictr_Lft_Dsply 1 "on" 0 "off" ;
+VAL_TABLE_ HMI_MID_Sgnl_3_Rq 15 "Fifteen_Sig_3" 14 "Fourteen_Sig_3" 13 "Thirteen_Sig_3" 12 "Twelve_Sig_3" 11 " Eleven_Sig_3" 10 "Ten_Sig_3" 9 "Nine_Sig_3" 8 "Eight_Sig_3" 7 "Seven_Sig_3" 6 " Six_Sig_3" 5 "Five_Sig_3" 4 "Four_Sig_3" 3 "Three_Sig_3" 2 "Two_Sig_3" 1 "One_Sig_3" 0 "Zero_Sig_3" ;
+VAL_TABLE_ HMI_MID_Sgnl_2_Rq 15 "Fifteen_Sig_2" 14 "Fourteen_Sig_2" 13 "Thirteen_Sig_2" 12 "Twelve_Sig_2" 11 " Eleven_Sig_2" 10 "Ten_Sig_2" 9 "Nine_Sig_2" 8 "Eight_Sig_2" 7 "Seven_Sig_2" 6 " Six_Sig_2" 5 "Five_Sig_2" 4 "Four_Sig_2" 3 "Three_Sig_2" 2 "Two_Sig_2" 1 "One_Sig_2" 0 "Zero_Sig_2" ;
+VAL_TABLE_ HMI_MID_Sgnl_1_Rq 15 "Fifteen_Sig_1" 14 "Fourteen_Sig_1" 13 "Thirteen_Sig_1" 12 "Twelve_Sig_1" 11 " Eleven_Sig_1" 10 "Ten_Sig_1" 9 "Nine_Sig_1" 8 "Eight_Sig_1" 7 "Seven_Sig_1" 6 " Six_Sig_1" 5 "Five_Sig_1" 4 "Four_Sig_1" 3 "Three_Sig_1" 2 "Two_Sig_1" 1 "One_Sig_1" 0 "Zero_Sig_1" ;
+VAL_TABLE_ Ahb_Dsply 1 "on" 0 "off" ;
+VAL_TABLE_ TP_Data_Rq 15 "Data_15" 14 "Data_14" 13 "Data_13" 12 "Data_12" 11 "Data_11" 10 "Data_10" 9 "Data_9" 8 "Data_8" 7 "Data_7" 6 "Data_6" 5 "Data_5" 4 "Data_4" 3 "Data_3" 2 "Data_2" 1 "Data_1" 0 "Unused" ;
+VAL_TABLE_ TA_Data_Rq 3 "Not_Used" 2 "Available" 1 "Unavailable" 0 "None" ;
+VAL_TABLE_ Preset_6_Bank_Rq 7 "Preset_6_Seven" 6 "Preset_6_Six" 5 "  Preset_6_Five" 4 "Preset_6_Four" 3 "Preset_6_Three" 2 "Preset_6_Two" 1 "Preset_6_One" 0 "Preset_6_None" ;
+VAL_TABLE_ Preset_12_Bank_Rq 15 "Not_Used3" 14 "Not_Used2" 13 "Not_Used1" 12 "Preset_12_Twelve" 11 "Preset_12_Eleven" 10 "Preset_12_Ten" 9 "Preset_12_Nine" 8 "Preset_12_Eigh" 7 "Preset_12_Seven" 6 " Preset_12_Six" 5 "Preset_12_Five" 4 "Preset_12_Four" 3 "  Preset_12_Three" 2 "Preset_12_Two" 1 "Preset_12_One" 0 "Preset_12_None" ;
+VAL_TABLE_ Actv_Live_2_Rq 3 "Disabled" 2 " On" 1 " Off" 0 "Unavailable" ;
+VAL_TABLE_ Actv_Live_1_Rq 3 "Disabled" 2 " On" 1 " Off" 0 "Unavailable" ;
+
+
+BO_ 1043 ABS_Msg_Data_CAN: 8 GWM
+ SG_ Indictr_Rgt_Dsply : 12|1@1+ (1,0) [0|1] ""  IPC
+ SG_ Indictr_Lft_Dsply : 32|1@1+ (1,0) [0|1] ""  IPC
+ SG_ MID_Msg_Rq : 24|1@1+ (1,0) [0|1] "SED"  IPC
+ SG_ MID_Data_Rq : 16|8@1+ (1,0) [0|255] "range"  IPC
+ SG_ HMI_MID_Sgnl_3_Rq : 4|4@1+ (1,0) [0|15] "SED"  IPC
+ SG_ HMI_MID_Sgnl_2_Rq : 8|4@1+ (1,0) [0|15] "SED"  IPC
+ SG_ HMI_MID_Sgnl_1_Rq : 0|4@1+ (1,0) [0|15] "SED"  IPC
+
+BO_ 1245 RDS_Coder_Data_CAN: 4 GWM
+ SG_ Ahb_Dsply : 6|1@1+ (1,0) [0|1] ""  IPC
+ SG_ Sig_Spdmtr_Rq : 16|16@1+ (1,0) [0|65535] "SED"  IPC
+ SG_ TP_Data_Rq : 2|4@1+ (1,0) [0|15] "SED"  IPC
+ SG_ TA_Data_Rq : 0|2@1+ (1,0) [0|3] "SED"  IPC
+
+BO_ 1239 Ball_Game_Mode_CAN: 6 GWM
+ SG_ Preset_6_Bank_Rq : 32|3@1+ (1,0) [0|7] "SED"  IPC
+ SG_ Preset_12_Bank_Rq : 4|4@1+ (1,0) [0|15] "SED"  IPC
+ SG_ FM_Menu_Data_Rq : 8|8@1+ (1,0) [0|255] "SED"  IPC
+ SG_ AM_Menu_Data_Rq : 16|16@1+ (1,0) [0|65535] ""  IPC
+ SG_ Actv_Live_2_Rq : 2|2@1+ (1,0) [0|3] "SED"  IPC
+ SG_ Actv_Live_1_Rq : 0|2@1+ (1,0) [0|3] "SED"  IPC
+
+
+
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 20000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Event message","Fixed Periodic message","Event Periodic message","vector_leerstring";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Event message";
+BA_DEF_DEF_  "BusType" "";
+BA_ "GenMsgCycleTime" BO_ 1043 1500;
+BA_ "GenMsgSendType" BO_ 1043 2;
+BA_ "GenMsgCycleTime" BO_ 1239 50;
+BA_ "GenMsgSendType" BO_ 1239 1;
+VAL_ 1043 Indictr_Rgt_Dsply 1 "on" 0 "off" ;
+VAL_ 1043 Indictr_Lft_Dsply 1 "on" 0 "off" ;
+VAL_ 1043 HMI_MID_Sgnl_3_Rq 15 "Fifteen_Sig_3" 14 "Fourteen_Sig_3" 13 "Thirteen_Sig_3" 12 "Twelve_Sig_3" 11 " Eleven_Sig_3" 10 "Ten_Sig_3" 9 "Nine_Sig_3" 8 "Eight_Sig_3" 7 "Seven_Sig_3" 6 " Six_Sig_3" 5 "Five_Sig_3" 4 "Four_Sig_3" 3 "Three_Sig_3" 2 "Two_Sig_3" 1 "One_Sig_3" 0 "Zero_Sig_3" ;
+VAL_ 1043 HMI_MID_Sgnl_2_Rq 15 "Fifteen_Sig_2" 14 "Fourteen_Sig_2" 13 "Thirteen_Sig_2" 12 "Twelve_Sig_2" 11 " Eleven_Sig_2" 10 "Ten_Sig_2" 9 "Nine_Sig_2" 8 "Eight_Sig_2" 7 "Seven_Sig_2" 6 " Six_Sig_2" 5 "Five_Sig_2" 4 "Four_Sig_2" 3 "Three_Sig_2" 2 "Two_Sig_2" 1 "One_Sig_2" 0 "Zero_Sig_2" ;
+VAL_ 1043 HMI_MID_Sgnl_1_Rq 15 "Fifteen_Sig_1" 14 "Fourteen_Sig_1" 13 "Thirteen_Sig_1" 12 "Twelve_Sig_1" 11 " Eleven_Sig_1" 10 "Ten_Sig_1" 9 "Nine_Sig_1" 8 "Eight_Sig_1" 7 "Seven_Sig_1" 6 " Six_Sig_1" 5 "Five_Sig_1" 4 "Four_Sig_1" 3 "Three_Sig_1" 2 "Two_Sig_1" 1 "One_Sig_1" 0 "Zero_Sig_1" ;
+VAL_ 1245 Ahb_Dsply 1 "on" 0 "off" ;
+VAL_ 1245 TP_Data_Rq 15 "Data_15" 14 "Data_14" 13 "Data_13" 12 "Data_12" 11 "Data_11" 10 "Data_10" 9 "Data_9" 8 "Data_8" 7 "Data_7" 6 "Data_6" 5 "Data_5" 4 "Data_4" 3 "Data_3" 2 "Data_2" 1 "Data_1" 0 "Unused" ;
+VAL_ 1245 TA_Data_Rq 3 "Not_Used" 2 "Available" 1 "Unavailable" 0 "None" ;
+VAL_ 1239 Preset_6_Bank_Rq 7 "Preset_6_Seven" 6 "Preset_6_Six" 5 "  Preset_6_Five" 4 "Preset_6_Four" 3 "Preset_6_Three" 2 "Preset_6_Two" 1 "Preset_6_One" 0 "Preset_6_None" ;
+VAL_ 1239 Preset_12_Bank_Rq 15 "Not_Used3" 14 "Not_Used2" 13 "Not_Used1" 12 "Preset_12_Twelve" 11 "Preset_12_Eleven" 10 "Preset_12_Ten" 9 "Preset_12_Nine" 8 "Preset_12_Eigh" 7 "Preset_12_Seven" 6 " Preset_12_Six" 5 "Preset_12_Five" 4 "Preset_12_Four" 3 "  Preset_12_Three" 2 "Preset_12_Two" 1 "Preset_12_One" 0 "Preset_12_None" ;
+VAL_ 1239 Actv_Live_2_Rq 3 "Disabled" 2 " On" 1 " Off" 0 "Unavailable" ;
+VAL_ 1239 Actv_Live_1_Rq 3 "Disabled" 2 " On" 1 " Off" 0 "Unavailable" ;
+
