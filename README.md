@@ -32,4 +32,4 @@ This dummy project simulates a Rest Bus environment using Vector CANoe and CAPL.
 - Vector CANoe
 - CAPL (CAN Access Programming Language)
 
-> ⚠ This is a **dummy project** meant for GitHub portfolios or interview demonstration only.
+>  This is a **dummy project** meant for GitHub portfolios or interview demonstration only.
